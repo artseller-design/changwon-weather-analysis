@@ -327,3 +327,48 @@ REPORT.md에 분석 주제, 질문, 데이터 설명, 시각화, 인사이트, �
 창원의 기온은 뚜렷한 계절적 변동을 나타냈으며, 연평균기온은 2024년에 가장 높았다. 이동평균은 분석 기간 후반에 높게 나타났으나, 2025년 연평균기온은 전년보다 낮아 지속적인 상승 추세로 단정하기 어렵다.
 
 강수량은 원자료의 빈칸에 대한 검증이 필요하므로, 강수량 합계 및 기온과의 상관성 해석에는 주의가 요구된다.
+
+## GitHub 저장소 및 제출 파일 안내
+
+### GitHub 저장소 URL
+
+**https://github.com/artseller-design/changwon-weather-analysis**
+
+본 프로젝트의 분석 코드, 데이터, 보고서 및 실행 환경 설정 파일은 위 GitHub 저장소에서 확인할 수 있습니다.
+
+### 제출 파일 및 확인 경로
+
+| 구분 | 파일 또는 폴더 | 내용 |
+|---|---|---|
+| 분석 코드 | [창원날씨.ipynb](./창원날씨.ipynb) | Python 데이터 전처리, 통계 분석 및 시각화 |
+| 분석 보고서 | [REPORT.md](./REPORT.md) | 연구질문, 분석 방법, 결과 및 한계 |
+| 원본 데이터 | [data/archives/](./data/archives/) | 연도별 원본 ZIP 파일 5개 |
+| 분석 데이터 | [data/raw/](./data/raw/) | 연도별 CSV 파일 5개 |
+| 실행 환경 | [requirements.txt](./requirements.txt) | Python 패키지 및 실행 의존성 |
+| 프로젝트 설명 | [README.md](./README.md) | 프로젝트 개요, 파일 구성 및 실행 안내 |
+
+### 프로젝트 디렉터리 구조
+
+```text
+changwon-weather-analysis/
+├── README.md
+├── REPORT.md
+├── 창원날씨.ipynb
+├── requirements.txt
+├── changwon_weather_project.code-workspace
+├── .gitignore
+├── .vscode/
+└── data/
+    ├── raw/          # 분석용 CSV 파일 5개
+    └── archives/     # 원본 ZIP 파일 5개
+```
+
+### 제출물 검증 방법
+
+1. GitHub 저장소 URL에 접속하여 공개 여부를 확인한다.
+2. `창원날씨.ipynb`에서 분석 코드와 그래프 생성 과정을 확인한다.
+3. `REPORT.md`에서 분석 목적, 방법, 통계 결과와 해석을 확인한다.
+4. `data/raw/` 및 `data/archives/`에서 분석자료와 원본자료를 확인한다.
+5. `requirements.txt`에 명시된 패키지를 설치하여 분석 노트북을 재실행할 수 있다.
+
+본 프로젝트는 코드·보고서·원본 데이터·분석 데이터를 함께 제공하여 분석 과정의 추적과 결과의 재현 가능성을 높이도록 구성하였다.
